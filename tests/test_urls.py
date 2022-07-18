@@ -5,7 +5,7 @@ from django.test import TestCase
 class URLTests(TestCase):
 
     def test_todo_app_ok(self):
-        response = self.client.get('/davodjuice')
+        response = self.client.get('/')
         self.assertEqual(response.status_code, 200)
         
     def test_todo_app_notok(self):
